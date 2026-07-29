@@ -1,0 +1,15 @@
+# Compiled output — should not be tracked
+bin/
+out/
+target/
+*.class
+*.jar
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# OS junk
+.DS_Store
+Thumbs.db
