@@ -1,4 +1,4 @@
-# Quality Assurance — JUnit 5 Testing Project
+﻿# Quality Assurance â€” JUnit 5 Testing Project
 
 A Java homework assignment from the Software Quality Assurance course at An-Najah National University. The project exercises JUnit 5 testing techniques against a small set of business-logic classes: a calculator, a product model, a recipe/recipe-book domain, and a user-service stub.
 
@@ -39,13 +39,13 @@ A Java homework assignment from the Software Quality Assurance course at An-Naja
 
 ```
 Quality-Assurance/
-└── Junit5-HW-50D4/
-    ├── src/
-    │   └── main/
-    │       └── najah/
-    │           ├── code/        # Business-logic source classes
-    │           └── test/        # JUnit 5 test classes
-    └── bin/                     # Compiled .class files (committed)
+â””â”€â”€ Junit5-HW-50D4/
+    â”œâ”€â”€ src/
+    â”‚   â””â”€â”€ main/
+    â”‚       â””â”€â”€ najah/
+    â”‚           â”œâ”€â”€ code/        # Business-logic source classes
+    â”‚           â””â”€â”€ test/        # JUnit 5 test classes
+    â””â”€â”€ bin/                     # Compiled .class files (committed)
 ```
 
 > Note: compiled `.class` files are committed under `bin/`. A `.gitignore` excluding build output would be a clean-up worth doing.
@@ -70,12 +70,18 @@ java -jar junit-platform-console-standalone.jar \
 
 The project explores five main JUnit 5 testing patterns:
 
-1. **Parameterized tests** — `CalculatorTest` feeds six factorial cases via `@CsvSource`, verifying correct output for `n = 0..7`.
-2. **Grouped assertions** — `assertAll` blocks in `CalculatorTest` ensure all sub-assertions are reported, not just the first failure.
-3. **Exception testing** — `assertThrows` checks that `divide(x, 0)` throws `ArithmeticException` and that `factorial(-1)` throws `IllegalArgumentException`.
-4. **Lifecycle hooks** — `@BeforeAll`, `@AfterAll`, `@BeforeEach`, and `@AfterEach` are present in every test class.
-5. **Test suite** — `Test_Suit.java` registers all four test classes under a single `@Suite` entry point.
+1. **Parameterized tests** â€” `CalculatorTest` feeds six factorial cases via `@CsvSource`, verifying correct output for `n = 0..7`.
+2. **Grouped assertions** â€” `assertAll` blocks in `CalculatorTest` ensure all sub-assertions are reported, not just the first failure.
+3. **Exception testing** â€” `assertThrows` checks that `divide(x, 0)` throws `ArithmeticException` and that `factorial(-1)` throws `IllegalArgumentException`.
+4. **Lifecycle hooks** â€” `@BeforeAll`, `@AfterAll`, `@BeforeEach`, and `@AfterEach` are present in every test class.
+5. **Test suite** â€” `Test_Suit.java` registers all four test classes under a single `@Suite` entry point.
 
 ---
 
 *Software Engineering degree, An-Najah National University*
+
+## License & copyright
+
+Copyright © 2026 Ali Yaqoub. All rights reserved.
+
+This software and its contents are proprietary. Unauthorized copying, distribution, modification, or commercial use is prohibited without prior written permission from the copyright holder.
